@@ -1,0 +1,47 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif; /* Set font for entire page */
+  margin: 0;                      /* Remove default margin */
+  padding: 0;                     /* Remove default padding */
+}
+
+/* Header section styling */
+header {
+  background: #c61515d8;          /* Red header background */
+  color: white;                    /* White text */
+  padding: 15px;                   /* Space inside header */
+  text-align: center;              /* Centered content */
+}
+
+/* Navigation links inside header */
+nav a {
+  margin: 0 10px;                  /* Space between links */
+  text-decoration: none;           /* Remove underline */
+  color: white;                    /* White text */
+  font-weight: bold;               /* Bold font */
+}
+
+/* Main content styling */
+main {
+  padding: 20px;                   /* Space inside main section */
+  text-align: center;              /* Center text and content */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;              /* Space inside button */
+  background: #c61515d8;           /* Button color */
+  border: none;                    /* Remove border */
+  color: white;                     /* Button text color */
+  border-radius: 5px;              /* Rounded corners */
+  cursor: pointer;                 /* Pointer cursor on hover */
+}
+
+/* Footer styling */
+footer {
+  background: #333;                /* Dark footer background */
+  color: white;                     /* White text */
+  text-align: center;              /* Center text */
+  padding: 10px;                   /* Space inside footer */
+  margin-top: 20px;                /* Space above footer */
+}
