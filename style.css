@@ -3,45 +3,86 @@ body {
   font-family: Arial, sans-serif; /* Set font for entire page */
   margin: 0;                      /* Remove default margin */
   padding: 0;                     /* Remove default padding */
+  line-height: 1.6;               /* ✅ Better readability */
+  font-size: 1rem;                /* ✅ Relative font size */
 }
 
 /* Header section styling */
 header {
   background: #c61515d8;          /* Red header background */
-  color: white;                    /* White text */
-  padding: 15px;                   /* Space inside header */
-  text-align: center;              /* Centered content */
+  color: white;                   /* White text */
+  padding: 15px;                  /* Space inside header */
+  text-align: center;             /* Centered content */
 }
 
 /* Navigation links inside header */
+nav {
+  display: flex;                  /* ✅ Use flexbox for layout */
+  justify-content: center;        /* ✅ Center links */
+  gap: 20px;                      /* ✅ Space between links */
+  margin-top: 10px;
+}
+
 nav a {
-  margin: 0 10px;                  /* Space between links */
-  text-decoration: none;           /* Remove underline */
-  color: white;                    /* White text */
-  font-weight: bold;               /* Bold font */
+  text-decoration: none;          /* Remove underline */
+  color: white;                   /* White text */
+  font-weight: bold;              /* Bold font */
+}
+
+nav a:hover {
+  text-decoration: underline;     /* ✅ Hover effect */
 }
 
 /* Main content styling */
 main {
-  padding: 20px;                   /* Space inside main section */
-  text-align: center;              /* Center text and content */
+  padding: 20px;                  /* Space inside main section */
+  text-align: center;             /* Center text and content */
+}
+
+/* Section headings */
+h2 {
+  background: #c61515d8;          /* ✅ Red background */
+  color: white;                   /* ✅ White text */
+  padding: 10px;
+  border-radius: 5px;             /* ✅ Rounded look */
 }
 
 /* Button styling */
 button {
-  padding: 10px 20px;              /* Space inside button */
-  background: #c61515d8;           /* Button color */
-  border: none;                    /* Remove border */
-  color: white;                     /* Button text color */
-  border-radius: 5px;              /* Rounded corners */
-  cursor: pointer;                 /* Pointer cursor on hover */
+  padding: 10px 20px;             /* Space inside button */
+  background: #c61515d8;          /* Button color */
+  border: none;                   /* Remove border */
+  color: white;                   /* Button text color */
+  border-radius: 5px;             /* Rounded corners */
+  cursor: pointer;                /* Pointer cursor on hover */
+}
+
+button:hover {
+  background: #a90f0f;            /* ✅ Darker red on hover */
 }
 
 /* Footer styling */
 footer {
-  background: #333;                /* Dark footer background */
-  color: white;                     /* White text */
-  text-align: center;              /* Center text */
-  padding: 10px;                   /* Space inside footer */
-  margin-top: 20px;                /* Space above footer */
+  background: #333;               /* Dark footer background */
+  color: white;                   /* White text */
+  text-align: center;             /* Center text */
+  padding: 10px;                  /* Space inside footer */
+  margin-top: 20px;               /* Space above footer */
+}
+
+/* ✅ Responsive design for mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;            /* Slightly smaller text */
+  }
+
+  nav {
+    flex-direction: column;       /* Stack links vertically */
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%;              /* Make images shrink */
+    height: auto;
+  }
 }
