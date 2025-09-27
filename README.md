@@ -1,16 +1,31 @@
-# TaskoSweets Website
+TaskoSweets Website
 
-This is a simple website for TaskoSweets, showcasing products and categories.
+A simple website created for my assignment. It includes HTML and CSS to display sweets, products, and contact information.
 
-## Features
-- Homepage with product categories
-- Images for each product
-- Responsive design with CSS
-- Hover effects on buttons
+##F eatures
+
+Home, About, Products, and Contact pages
+
+## External CSS styling (style.css)
+Flexbox used for layout
+Responsive design with media queries
+Buttons and hover effects
+Changelog
+Added external stylesheet (style.css)
+Improved layout using Flexbox
+Added media queries for responsiveness
+Updated footer styling
 
 ## How to View
-1. Clone or download this repository.
-2. Open the `index.html` file in your browser.
+Download the repository files.
+Open index.html in a web browser.
+
+## References
+W3Schools
+ – for HTML & CSS basics
+MDN Web Docs
+ – for Flexbox and responsive design
 
 ## Author
-EM Thulo
+
+EM THULO
